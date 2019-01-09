@@ -67,7 +67,7 @@ $rss_feed_content_begin =
     <description>We are Open Source Engineers, Hacking Awesome Stuff!</description>
     <language>en-en</language>
     <copyright>Linagora Engineering</copyright>
-    <pubDate> . date(\"Y-m-d H:i:s\") . </pubDate>";
+    <pubDate>" . ("Y-m-d H:i:s") . "</pubDate>";
 
 file_put_contents($myfile,$rss_feed_content_begin);
 	
