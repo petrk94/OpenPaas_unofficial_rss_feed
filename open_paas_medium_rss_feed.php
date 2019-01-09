@@ -9,9 +9,11 @@ $html = file_get_html('https://medium.com/linagora-engineering/latest');
 $link = array();
 # assign variable headlines as array
 $headlines = array();
-# assign variable subnames as array
+# assign variable author as array
 $author = array();
 
+# search for the element class in html code and write the links inside the <a> tag to the link array
+# print the array $link
 foreach($html->find('.postArticle-content a') as $element) {
    $link[] = $element->href;
    print_r($link);
